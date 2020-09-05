@@ -1,10 +1,5 @@
 module.exports = {
-  extends: [
-    "airbnb",
-    "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
-  ],
+  extends: ["airbnb", "prettier", "prettier/react"],
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 2020,
@@ -13,11 +8,14 @@ module.exports = {
       classes: true,
     },
   },
+  rules: {
+    // my custom rules
+  },
   env: {
     browser: true,
     node: true,
     jquery: true,
     jest: true,
   },
-  plugins: ["@typescript-eslint", "jest", "html", "prettier", "react-hooks"],
+  plugins: ["prettier", "jest", "html", "react-hooks"],
 };
