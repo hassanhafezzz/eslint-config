@@ -1,6 +1,6 @@
 {
   "name": "@hassanhafezzz/eslint-config",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "My sharable ESLint and Prettier config",
   "keywords": [
     "javascript",
@@ -35,6 +35,8 @@
     ]
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.8.1",
     "eslint-config-airbnb": "^18.2.0",
@@ -47,8 +49,6 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
     "prettier": "^2.1.1",
-    "@typescript-eslint/eslint-plugin": "^4.6.0",
-    "@typescript-eslint/parser": "^4.6.0",
     "typescript": "^4.0.5"
   },
   "devDependencies": {
