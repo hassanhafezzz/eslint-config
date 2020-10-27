@@ -15,9 +15,9 @@
   "license": "MIT",
   "scripts": {
     "commit": "git add . && git-cz",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx .",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|ts|tsx)\"",
+    "test": "echo \"edit in the examples folder to test \" && exit 1"
   },
   "husky": {
     "hooks": {
@@ -46,16 +46,21 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "typescript": "^4.0.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.1.2",
     "eslint": "^7.8.1",
     "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-html": "^6.0.3",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.0",
@@ -64,6 +69,7 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
     "husky": "^4.2.5",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "typescript": "^4.0.5"
   }
 }

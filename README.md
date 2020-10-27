@@ -1,4 +1,3 @@
-
 # eslint-config
 
 Hello 👋🏻, this my WIP eslint config
@@ -15,6 +14,10 @@ Then, once it's installed, create an `.eslintrc` file in the top-level directory
 
 ```json
 {
-  "extends": "@hassanhafezzz/eslint-config",
+  "extends": "@hassanhafezzz/eslint-config"
 }
 ```
+
+### Todos
+
+- [ ] make typescript config optional
